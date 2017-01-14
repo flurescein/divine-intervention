@@ -6,7 +6,7 @@ function start() {
 
     app.use(express.static(__dirname + '/dist'));
 
-    server = app.listen(80, () => {
+    server = app.listen(process.env.PORT, () => {
         console.log('Server has stared.')
     });
 }
