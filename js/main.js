@@ -41,7 +41,9 @@ class System {
         this.planets = [];
 
         this.paper.click((e) => {
-            this.__createPlanet(e.offsetX, e.offsetY);
+            if (e.target.tagName === 'svg') {
+                this._createPlanet(e.offsetX, e.offsetY);
+            }
         });
     }
 
@@ -63,7 +65,7 @@ class System {
 
     // Private.
     _createStars() {
-        let starsCount = Math.floor(this.sizeRatio * 20);
+        let starsCount = Math.floor(this.sizeRatio * 10);
         let intervalId = setInterval(() => {
             this.paper
                 .circle(Math.random() * this.width,
@@ -86,7 +88,7 @@ class System {
             });
     }
 
-    __createPlanet(x, y) {
+    _createPlanet(x, y) {
         let planet = this.paper
             .circle(x, y, 15 + Math.random() * this.sizeRatio / 2)
             .attr({ fill: getRandomRGB() });
