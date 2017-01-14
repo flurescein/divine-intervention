@@ -1,0 +1,34 @@
+{
+  "name": "divine-intervention",
+  "version": "0.0.1",
+  "description": "A simple game about the creation of the universe.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flurescein/divine-intervention.git"
+  },
+  "keywords": [
+    "god",
+    "university",
+    "game",
+    "divine",
+    "intervention"
+  ],
+  "author": "flurescein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flurescein/divine-intervention/issues"
+  },
+  "homepage": "https://github.com/flurescein/divine-intervention#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}
